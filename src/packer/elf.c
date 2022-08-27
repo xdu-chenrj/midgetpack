@@ -136,7 +136,7 @@ enum architecture_e elf_get_arch(struct elf_file_s *file){
           file->arch = EM_ARM;
           return EM_ARM;
       }
-      printf("header64->e_machine");
+      printf("%u\n", header64->e_machine);
       return ARCH_UNSUPPORTED;
   }
   return ARCH_INVALID;
