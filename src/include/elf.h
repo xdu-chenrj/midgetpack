@@ -154,7 +154,9 @@ typedef struct
 #define EM_NONE		 0		/* No machine */
 #define EM_386		 3		/* Intel 80386 */
 #define EM_X86_64	62		/* AMD x86-64 architecture */
-#define EM_ARM		40		/* ARM */
+//#define EM_ARM		40		/* ARM */
+#define EM_ARM		183		/* ARM */
+
 
 /* Program segment header.  */
 
