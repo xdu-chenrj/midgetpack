@@ -132,6 +132,10 @@ enum architecture_e elf_get_arch(struct elf_file_s *file){
         file->arch = ARCH_AMD64;
         return ARCH_AMD64;
       }
+      if(header64->e_machine == EM_ARM){
+          file->arch = EM_ARM;
+          return EM_ARM;
+      }
       return ARCH_UNSUPPORTED;
   }
   return ARCH_INVALID;
