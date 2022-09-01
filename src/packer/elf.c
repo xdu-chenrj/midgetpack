@@ -133,7 +133,7 @@ enum architecture_e elf_get_arch(struct elf_file_s *file){
         return ARCH_AMD64;
       }
       if(header64->e_machine == EM_ARM){
-          file->arch = EM_ARM;
+          file->arch = ARCH_ARM;
           return ARCH_ARM;
       }
       printf("%u\n", header64->e_machine);
